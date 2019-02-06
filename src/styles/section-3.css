@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+.section-3 {
+  height: 500px;
+  width: 100%;
+  font-family: 'Fjalla One', sans-serif;
+  color: #EDB524;
+}
+
+.section-3-background {
+  height: 500px;
+  width: 100%;
+  background-image: url('../images/witcher/bg.png');
+  background-size: cover;
+}
+
+.section-3-filter-video {
+  position: absolute;
+  left: 55%;
+  height: 500px;
+  width: 50%;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+#section-3-video {
+  height: 500px;
+  position: absolute;
+  left: -30%;
+}
+
+.section-3-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 500px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.section-3-menu-item {
+  font-size: 1.2em;
+}
+
+.section-3-menu-item:hover {
+  color: rgb(230, 196, 112);
+  cursor: pointer;
+}
+
+.section-3-left-container {
+  height: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-3-buynow-button {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 100px;
+  border-radius: 6px;
+  background-color: #6F0303;
+  color: whitesmoke;
+  transition: ease-out 0.5s;
+  letter-spacing: 1px;
+}
+
+.section-3-buynow-button:hover {
+  background-color: #B61010;
+  cursor: pointer;
+  color: white;
+}
