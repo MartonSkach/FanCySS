@@ -16,7 +16,7 @@
 
 .section-3-filter-video {
   position: absolute;
-  left: 55%;
+  right: -5%;
   height: 500px;
   width: 50%;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
@@ -25,7 +25,7 @@
 #section-3-video {
   height: 500px;
   position: absolute;
-  left: -30%;
+  right: -5%;
 }
 
 .section-3-menu {
