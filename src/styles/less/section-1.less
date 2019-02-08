@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+@font-family: 'Indie Flower', cursive;
+@text-color: antiquewhite;
+@background-color: #242424;
+@button-color: rgb(63, 63, 63);
+@gradient-color-one: #c94b4b;
+@gradient-color-two: #4b134f;
+.flexbox-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1 {
+  font-family: @font-family;
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(to right, @gradient-color-one, @gradient-color-two);
+  .section-1-A {
+    height: 400px;
+    width: 100%;
+    background-color: @background-color;
+    border-bottom-right-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.section-1-ipsums {
+  .flexbox-column();
+  height: 400px;
+  width: 300px;
+  color: @text-color;
+  .section-1-ipsum-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+  }
+  .section-1-ipsum-trademark {
+    font-weight: italic;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+  }
+}
+
+.section-1-image {
+  .flexbox-row();
+  background-image:
+  linear-gradient(@gradient-color-one, @gradient-color-two),
+  linear-gradient(to left,@gradient-color-one, @gradient-color-two),
+  linear-gradient(0deg, @gradient-color-one, @gradient-color-two),
+  linear-gradient(to right, @gradient-color-one, @gradient-color-two),
+  linear-gradient(@background-color, @background-color);
+  background-repeat: no-repeat;
+  background-size: 6px 50%, 50% 6px, 6px 50%, 50% 6px, calc(100% - 12px) calc(100% - 12px);
+  background-position: left bottom, left bottom, right top, right top, 4px 4px;
+  height: 300px;
+  width: 300px;
+}
+
+.section-1-introduction-container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  .section-1-title {
+    .flexbox-row();
+    height: 70px;
+    width: 280px;
+    clip-path: polygon(4% 9%, 89% 5%, 98% 100%, 2% 78%);
+    background-color: @button-color;
+    color: @text-color;
+    font-weight: bold;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    transform: rotate(-4deg);
+  }
+  .section-1-button-container {
+    height: 120px;
+    width: 250px;
+    .section-1-button-base {
+      position: absolute;
+      height: 120px;
+      width: 250px;
+      background-image: linear-gradient(to right, @gradient-color-one, @gradient-color-two);
+      clip-path: polygon(20% 0, 100% 55%, 0 100%);
+    }
+    .section-1-button {
+      .flexbox-row();
+      position: relative;
+      height: 60px;
+      width: 200px;
+      top: 30px;
+      clip-path: polygon(2% 7%, 98% 2%, 98% 98%, 2% 78%);
+      background-color: @button-color;
+      color: @text-color;
+      font-weight: bold;
+      font-size: 1.5em;
+      letter-spacing: 3px;
+      transition: ease-out 0.2s;
+      &:hover {
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 80%);
+        transform: rotate(2deg);
+        font-size: 1.7em;
+        cursor: pointer;
+      }
+    }
+  }
+}

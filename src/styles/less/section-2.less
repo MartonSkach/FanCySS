@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.flexbox-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 {
+  height: 500px;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  color: #555555;
+  .section-2-author-layer {
+    .flexbox-row();
+    height: 500px;
+    width: 100%;
+    background-color: #FEF6E3;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .section-2-title {
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+    .section-2-portrait-container {
+      .section-2-portrait {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin: 0px 15px;
+        transition: ease-in 0.2s;
+        &:hover {
+          box-shadow: 0px 4px 24px -2px rgba(41,30,14,0.75);
+        }
+      }
+    }
+  }
+}
+
+.section-2-recommendation-layer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  transition: all 0.7s;
+  .section-2-book-image {
+    .flexbox-row();
+    height: 100%;
+    width: 50%;
+    background-color: #FFEFBA;
+  }
+  .section-2-book-description {
+    .flexbox-row();
+    height: calc(100% - 100px);
+    width: calc(50% - 100px);
+    flex-direction: column;
+    padding: 50px 50px;
+    background-color: #FFFFFF;
+    .section-2-description-text {
+      overflow: auto;
+      overflow-x: hidden;
+    }
+  }
+  .section-2-return-button {
+    position: absolute;
+    background: url('../../images//icons/return.svg');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

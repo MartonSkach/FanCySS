@@ -1,3 +1,3 @@
-Personal playground to experiment with CSS solutions, using React.
+Personal playground to practice styling with React and Less.js.
 
-File structure is extremely messy.
+Responsive design is not added yet.
