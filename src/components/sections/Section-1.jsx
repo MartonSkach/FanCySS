@@ -24,7 +24,9 @@ const catIpsumBase = [
 
 class SectionOne extends Component {
   state={
-    pictureNumber: 0
+    pictureNumber: 0,
+    color1: '#c94b4b',
+    color2: '#4b134f'
   }
 
   changeImage = () => {
@@ -39,17 +41,27 @@ class SectionOne extends Component {
     }
   };
 
+  changeColor1 = (e) => {
+    this.setState({
+      color1: e.target.value
+    })
+  };
+
+  changeColor2 = (e) => {
+    this.setState({
+      color2: e.target.value
+    })
+  };
+
   render() {
     return (
-      <div className="section-1">
+      <div className="section-1" style={{ '--color-1': this.state.color1, '--color-2': this.state.color2}}>
           <div className="section-1-A">
-
             <div className="section-1-ipsums">
               <p className="section-1-ipsum-title">"{catIpsumTitle[this.state.pictureNumber]}"</p>
               <p>{catIpsumBase[this.state.pictureNumber]}</p>
               <p className="section-1-ipsum-trademark">www.catipsum.com ®</p>
             </div>
-
             <div className="section-1-image">
               <img
                 src={catGangArray[this.state.pictureNumber]}
@@ -57,7 +69,6 @@ class SectionOne extends Component {
                 style={{width: '290px', height: '290px'}}
                 />
             </div>
-
             <div className='section-1-introduction-container'>
               <div className="section-1-title">Meet the Cat Gang</div>
               <div className="section-1-button-container">
@@ -68,11 +79,13 @@ class SectionOne extends Component {
               </div>
             </div>
           </div>
-
+          <div className="section-1-color-box">
+            <input type="color" value={this.state.color1} onChange={this.changeColor1}/>
+            <input type="color" value={this.state.color2} onChange={this.changeColor2}/>
+          </div>
         </div>
     )
   }
-
 }
 
 export default SectionOne;

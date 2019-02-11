@@ -57,8 +57,15 @@
     padding: 50px 50px;
     background-color: #FFFFFF;
     .section-2-description-text {
-      overflow: auto;
+      text-align: justify;
+      overflow: scroll;
       overflow-x: hidden;
+      -ms-overflow-style: none;
+      overflow: -moz-scrollbars-none;
+    }
+    ::-webkit-scrollbar {
+     width: 0px;
+     background: transparent;
     }
   }
   .section-2-return-button {

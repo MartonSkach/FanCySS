@@ -4,6 +4,10 @@
   font-weight: 400;
   src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v9/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
 }
+:root {
+  --color-1: white;
+  --color-2: white;
+}
 .flexbox-row {
   display: flex;
   align-items: center;
@@ -19,9 +23,10 @@
   font-family: 'Indie Flower', cursive;
   height: 500px;
   width: 100%;
-  background-image: linear-gradient(to right, #c94b4b, #4b134f);
+  background-image: linear-gradient(to right, var(--color-1), var(--color-2));
 }
 .section-1 .section-1-A {
+  position: relative;
   height: 400px;
   width: 100%;
   background-color: #242424;
@@ -29,6 +34,30 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.section-1 .section-1-color-box {
+  position: relative;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-1 .section-1-color-box input {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  background: none;
+}
+.section-1 .section-1-color-box input:hover {
+  cursor: pointer;
+}
+.section-1 .section-1-color-box input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.section-1 .section-1-color-box input::-webkit-color-swatch {
+  border: solid 1px #2c2c2c;
+  border-radius: 40px;
 }
 .section-1-ipsums {
   display: flex;
@@ -53,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#c94b4b, #4b134f), linear-gradient(to left, #c94b4b, #4b134f), linear-gradient(0deg, #c94b4b, #4b134f), linear-gradient(to right, #c94b4b, #4b134f), linear-gradient(#242424, #242424);
+  background-image: linear-gradient(var(--color-1), var(--color-2)), linear-gradient(to left, var(--color-1), var(--color-2)), linear-gradient(0deg, var(--color-1), var(--color-2)), linear-gradient(to right, var(--color-1), var(--color-2)), linear-gradient(#242424, #242424);
   background-repeat: no-repeat;
   background-size: 6px 50%, 50% 6px, 6px 50%, 50% 6px, calc(100% - 12px) calc(100% - 12px);
   background-position: left bottom, left bottom, right top, right top, 4px 4px;
@@ -90,7 +119,7 @@
   position: absolute;
   height: 120px;
   width: 250px;
-  background-image: linear-gradient(to right, #c94b4b, #4b134f);
+  background-image: linear-gradient(to right, var(--color-1), var(--color-2));
   clip-path: polygon(20% 0, 100% 55%, 0 100%);
 }
 .section-1-introduction-container .section-1-button-container .section-1-button {

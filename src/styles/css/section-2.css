@@ -65,8 +65,15 @@
   background-color: #FFFFFF;
 }
 .section-2-recommendation-layer .section-2-book-description .section-2-description-text {
-  overflow: auto;
+  text-align: justify;
+  overflow: scroll;
   overflow-x: hidden;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+.section-2-recommendation-layer .section-2-book-description ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 .section-2-recommendation-layer .section-2-return-button {
   position: absolute;

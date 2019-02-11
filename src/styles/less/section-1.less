@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+:root {
+  --color-1: white;
+  --color-2: white;
+}
+
 @font-family: 'Indie Flower', cursive;
 @text-color: antiquewhite;
 @background-color: #242424;
 @button-color: rgb(63, 63, 63);
-@gradient-color-one: #c94b4b;
-@gradient-color-two: #4b134f;
+@gradient-color-one: var(--color-1);
+@gradient-color-two: var(--color-2);
 .flexbox-row {
   display: flex;
   align-items: center;
@@ -24,6 +29,7 @@
   width: 100%;
   background-image: linear-gradient(to right, @gradient-color-one, @gradient-color-two);
   .section-1-A {
+    position: relative;
     height: 400px;
     width: 100%;
     background-color: @background-color;
@@ -31,6 +37,29 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+  }
+  .section-1-color-box {
+    position: relative;
+    height: 100px;
+    .flexbox-row();
+    & input{
+      width: 40px;
+	    height: 40px;
+	    border: none;
+	    border-radius: 40px;
+      background: none;
+      &:hover {
+        cursor: pointer;
+      }
+      &::-webkit-color-swatch-wrapper {
+        padding: 0;
+      }
+      &::-webkit-color-swatch {
+        border: solid 1px rgb(44, 44, 44);
+        border-radius: 40px;
+      }
+    }
+
   }
 }
 
@@ -50,7 +79,6 @@
     letter-spacing: 1px;
   }
 }
-
 .section-1-image {
   .flexbox-row();
   background-image:
