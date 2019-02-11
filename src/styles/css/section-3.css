@@ -10,25 +10,32 @@
   font-family: 'Fjalla One', sans-serif;
   color: #EDB524;
 }
-.section-3-background {
+.section-3 .section-3-background {
   height: 500px;
   width: 100%;
   background-image: url('../../images/witcher/bg.png');
   background-size: cover;
 }
-.section-3-filter-video {
+.section-3 .section-3-filter-video {
   position: absolute;
   right: -5%;
   height: 500px;
   width: 50%;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
-#section-3-video {
+.section-3 #section-3-video {
   height: 500px;
   position: absolute;
   right: -5%;
 }
-.section-3-menu {
+.section-3 .section-3-left-container {
+  height: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-3 .section-3-left-container .section-3-menu {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -36,21 +43,14 @@
   padding-top: 20px;
   padding-bottom: 80px;
 }
-.section-3-menu-item {
+.section-3 .section-3-left-container .section-3-menu .section-3-menu-item {
   font-size: 1.2em;
 }
-.section-3-menu-item:hover {
+.section-3 .section-3-left-container .section-3-menu .section-3-menu-item:hover {
   color: #e6c470;
   cursor: pointer;
 }
-.section-3-left-container {
-  height: 500px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.section-3-buynow-button {
+.section-3 .section-3-left-container .section-3-buynow-button {
   margin-top: 30px;
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@
   transition: ease-out 0.5s;
   letter-spacing: 1px;
 }
-.section-3-buynow-button:hover {
+.section-3 .section-3-left-container .section-3-buynow-button:hover {
   background-color: #B61010;
   cursor: pointer;
   color: white;
