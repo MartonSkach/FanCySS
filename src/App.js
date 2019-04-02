@@ -17,7 +17,6 @@ class App extends Component {
         <SectionThree />
         <div className="separator"></div>
         <SectionFour />
-        <div className="separator"></div>
       </div>
     );
   }

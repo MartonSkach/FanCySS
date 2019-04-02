@@ -2,19 +2,19 @@
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
-  src: local('PT Serif'), local('PTSerif-Regular'), url(https://fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvAFWzro.ttf) format('truetype');
+  src: local('PT Serif'), local('PTSerif-Regular'), url(https://fonts.gstatic.com/s/ptserif/v10/EJRVQgYoZZY2vCFuvAFWzro.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Oxygen';
   font-style: normal;
   font-weight: 300;
-  src: local('Oxygen Light'), local('Oxygen-Light'), url(https://fonts.gstatic.com/s/oxygen/v7/2sDcZG1Wl4LcnbuCJW8zaGW8.ttf) format('truetype');
+  src: local('Oxygen Light'), local('Oxygen-Light'), url(https://fonts.gstatic.com/s/oxygen/v8/2sDcZG1Wl4LcnbuCJW8zaGW8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Oxygen';
   font-style: normal;
   font-weight: 400;
-  src: local('Oxygen Regular'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v7/2sDfZG1Wl4LcnbuKjk0j.ttf) format('truetype');
+  src: local('Oxygen Regular'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v8/2sDfZG1Wl4LcnbuKjk0j.ttf) format('truetype');
 }
 .button-base-style {
   height: 40px;
